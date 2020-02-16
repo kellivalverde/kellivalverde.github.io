@@ -1,0 +1,10 @@
+h1 {
+    color: gray;
+}
+body{
+    background-color: honeydew;
+}
+article {
+    display: flex;
+    justify-content: space-between;
+  }
