@@ -1,32 +1,47 @@
 html {
-    margin: auto;
+    margin: 0;
     padding: 0;
 }
 
 h1 {
-    color: whitesmoke;
+    color: cornflowerblue;
 }
 
-nav {
-    display: inline;
+#nav {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 2rem auto;
+    padding: 11px;
+    max-width: 1000px;
     color: tomato;
 }
 
-body {
+.container {
     font: 75% georgia, sans-serif;
     line-height: 1.88889;
-    color: whitesmoke;
-    background: black url(../images/VS-code-skewed2.png) no-repeat bottom right;
+    color: gray;
+    /*color: whitesmoke;*/
+    /* background: black url(../images/VS-code-skewed2.png) no-repeat bottom right;*/
     margin: 0;
     padding: 0;
 }
+
+.About_Me {}
 
 p {
     margin-top: 0;
     text-align: justify;
 }
 
+.Projects {
+    display: flex;
+    flex-direction: row;
+}
+
 article {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    margin: 2rem auto;
+    padding: 11px;
+    max-width: 400px;
 }
