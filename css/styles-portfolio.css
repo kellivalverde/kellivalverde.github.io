@@ -137,10 +137,8 @@
       text-decoration: none;
       font-size: 17px;
       display: flex;
-      flex-flow: row;
-      align-self: center;
+      flex-direction: row;
       font-weight: bold;
-      justify-content: space-evenly;
       padding: 10px;
   }
   
