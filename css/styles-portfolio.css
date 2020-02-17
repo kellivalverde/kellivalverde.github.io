@@ -14,9 +14,9 @@
   
   .container {
       align-items: center;
-      display: flex;
+      /* display: flex;
       flex-direction: row;
-      flex-wrap: wrap;
+      flex-wrap: wrap; */
       height: 20rem;
       color: gray;
       margin: 20px;
@@ -25,8 +25,7 @@
   }
   
   header,
-  .container,
-  footer {
+  .container {
       margin: 0 auto;
       max-width: 800px;
   }
@@ -63,7 +62,7 @@
   header {
       font-size: 2em;
       color: cornflowerblue;
-      padding: 2em 0;
+      padding: 1.6em 0;
   }
   
   header span {
@@ -85,10 +84,15 @@
       margin: 5px;
   }
   
+  article img,
+  p {
+      max-width: 90%;
+  }
+  
   .About_Me {
       display: grid;
       grid-template-columns: 1fr auto;
-      padding: 10px;
+      /* padding: 10px; */
       margin: 10px;
   }
   /* Contact me links */
@@ -107,13 +111,11 @@
       justify-content: space-evenly;
       padding: 10px;
   }
-  /* Change the color of links on hover */
   
   .about_me_item a:hover {
       font-weight: bold;
       color: cornflowerblue;
   }
-  /* Add a color to the active/current link */
   
   .about_me_item a.active {
       font-weight: bold;
@@ -139,9 +141,8 @@
       /* max-height: 500px;*/
   }
   
-  article img,
-  p {
-      max-width: 90%;
+  section ul {
+      padding-left: 1.5em;
   }
   
   .project_item a {
@@ -156,7 +157,12 @@
   /* ****  FOOTER  **** */
   
   footer {
-      font-family: Arial, Helvetica, sans-serif;
-      display: flex;
-      justify-content: center;
+      margin: 0 auto;
+      margin-top: 2em;
+      margin-bottom: 1em;
+      width: 100%;
+      background-color: #333;
+      color: white;
+      padding: 1em;
+      text-align: center;
   }
