@@ -13,14 +13,14 @@
       margin: 0;
       background-repeat: no-repeat;
       background-attachment: fixed;
-      background-image: linear-gradient(white, rgb(186, 207, 245));
+      background-image: linear-gradient(cornflowerblue, white);
   }
   /* ****  CONTAINER  **** */
   
   .container {
       align-items: center;
       height: 20rem;
-      color: gray;
+      color: #333;
       margin: 20px;
       border: 10px;
       padding: 0;
@@ -29,7 +29,7 @@
   header,
   .container {
       margin: 0 auto;
-      max-width: 1000px;
+      max-width: 1024px;
   }
   /* ****  NAV BAR  **** */
   
@@ -63,13 +63,14 @@
   
   header {
       font-size: 2em;
-      color: cornflowerblue;
-      padding: 1.6em 0;
+      color: white;
+      padding: 2em 0;
   }
   
   header span {
       font-size: 1em;
-      color: gray;
+      line-height: 1em;
+      color: white;
   }
   
   section {
@@ -112,6 +113,10 @@
       margin-left: 0px;
       overflow: auto;
       display: block;
+  }
+  
+  .skills ul {
+      align-self: start;
   }
   /* Contact me links */
   
@@ -171,7 +176,7 @@
       margin-top: 2em;
       margin-bottom: 1em;
       width: 100%;
-      color: cornflowerblue;
+      color: #333;
       padding: 1em;
       text-align: center;
   }
