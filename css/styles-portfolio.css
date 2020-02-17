@@ -1,178 +1,164 @@
-html {
-    margin: 0;
-    padding: 0;
-    background-color: whitesmoke;
-}
-
-
-/* ****  NAV BAR  **** */
-
-.topnav {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #333;
-    color: white;
-    overflow: hidden;
-}
-
-
-/* Style the links inside the navigation bar */
-
-.topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-
-/* Change the color of links on hover */
-
-.topnav a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-
-/* Add a color to the active/current link */
-
-.topnav a.active {
-    background-color: #4CAF50;
-    color: white;
-}
-
-
-/* ****  CONTAINER  **** */
-
-.container {
-    justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.88889;
-    color: gray;
-    /*color: whitesmoke;*/
-    /* background: black url(../images/VS-code-skewed2.png) no-repeat bottom right;*/
-    margin: 20px;
-    border: 10px;
-    padding: 0;
-}
-
-h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    color: cornflowerblue;
-}
-
-section {
-    border: 10px;
-}
-
-
-/* ****  ABOUT ME SECTION  **** */
-
-.About_Me {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: left;
-}
-
-h3 {
-    padding: 10px;
-    border: 10;
-}
-
-p {
-    margin-top: 0;
-    text-align: justify;
-}
-
-.about_me_item {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 10px;
-    border: 10px;
-    max-width: 30%;
-}
-
-.about_me_item img {
-    display: flex;
-    flex-direction: column;
-    max-height: 300px;
-    padding: 10px;
-    border: 10px;
-}
-
-.about_me_item h3 {
-    max-height: 30px;
-}
-
-.skills,
-.contact {
-    display: flex;
-    flex-direction: column;
-}
-
-
-/* Contact me links */
-
-.about_me_item a {
-    float: left;
-    color: #333;
-    text-align: center;
-    padding: 14px 16px;
-    /*text-decoration: none;*/
-    font-size: 17px;
-    max-width: 70px;
-    max-height: 30px;
-    justify-content: space-evenly;
-}
-
-
-/* Change the color of links on hover */
-
-.about_me_item a:hover {
-    background-color: cornflowerblue;
-    color: white;
-}
-
-
-/* Add a color to the active/current link */
-
-.about_me_item a.active {
-    background-color: blueviolet;
-    color: white;
-}
-
-
-/* ****  PROJECTS SECTION  **** */
-
-.Projects {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.project_item {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: 2rem auto;
-    padding: 10px;
-    max-width: 30%;
-    /* max-height: 500px;*/
-}
-
-article img,
-p {
-    max-width: 90%;
-}
-
-
-/* ****  FOOTER  **** */
-
-footer {
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    justify-content: center;
-}
+    html {
+        margin: 0;
+        padding: 0;
+        background-color: whitesmoke;
+    }
+    /* ****  CONTAINER  **** */
+    
+    .container {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 20rem;
+        justify-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+        color: gray;
+        margin: 20px;
+        border: 10px;
+        padding: 0;
+    }
+    /* ****  NAV BAR  **** */
+    
+    .topnav {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #333;
+        color: white;
+        overflow: hidden;
+    }
+    /* Style the links inside the navigation bar */
+    
+    .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    /* Change the color of links on hover */
+    
+    .topnav a:hover {
+        background-color: #ddd;
+        font-weight: bold;
+        color: black;
+    }
+    /* Add a color to the active/current link */
+    
+    .topnav a.active {
+        background-color: #4CAF50;
+        color: white;
+    }
+    /*  ****  Main Header  **** */
+    
+    .main_header {
+        font-family: Arial, Helvetica, sans-serif;
+        color: cornflowerblue;
+        justify-content: center;
+    }
+    /* ****  ABOUT ME SECTION  **** */
+    
+    .About_Me {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+    
+    p {
+        margin-top: 0;
+        text-align: justify;
+        flex-grow: 1;
+        margin: 5px;
+    }
+    
+    .about_me_item {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 10px;
+        border: 10px;
+        max-width: 30%;
+    }
+    
+    .about_me_item img {
+        display: flex;
+        flex-direction: column;
+        max-height: 300px;
+        padding: 10px;
+        border: 10px;
+    }
+    
+    .about_me_item h3 {
+        max-height: 30px;
+    }
+    
+    .skills,
+    .contact {
+        display: flex;
+        flex-direction: column;
+    }
+    /* Contact me links */
+    
+    .buttons a {
+        float: left;
+        color: #333;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        max-width: 70px;
+        max-height: 30px;
+        justify-content: space-evenly;
+    }
+    /* Change the color of links on hover */
+    
+    .about_me_item a:hover {
+        font-weight: bold;
+        color: cornflowerblue;
+    }
+    /* Add a color to the active/current link */
+    
+    .about_me_item a.active {
+        font-weight: bold;
+        color: blueviolet;
+    }
+    /* ****  PROJECTS SECTION  **** */
+    
+    .Projects {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .project_item {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 2rem auto;
+        padding: 10px;
+        max-width: 30%;
+        /* max-height: 500px;*/
+    }
+    
+    article img,
+    p {
+        max-width: 90%;
+    }
+    
+    .project_item a {
+        text-decoration: none;
+        color: #333;
+    }
+    
+    .project_item a:hover {
+        font-weight: bold;
+        color: cornflowerblue;
+    }
+    /* ****  FOOTER  **** */
+    
+    footer {
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        justify-content: center;
+    }
