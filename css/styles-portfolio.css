@@ -46,12 +46,14 @@ html {
 /* ****  CONTAINER  **** */
 
 .container {
+    justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.88889;
     color: gray;
     /*color: whitesmoke;*/
     /* background: black url(../images/VS-code-skewed2.png) no-repeat bottom right;*/
     margin: 20px;
+    border: 10px;
     padding: 0;
 }
 
@@ -60,12 +62,23 @@ h1 {
     color: cornflowerblue;
 }
 
+section {
+    border: 10px;
+}
+
 
 /* ****  ABOUT ME SECTION  **** */
 
 .About_Me {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+h3 {
+    padding: 10px;
+    border: 10;
 }
 
 p {
@@ -75,12 +88,54 @@ p {
 
 .about_me_item {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    margin: 2rem auto;
     padding: 10px;
+    border: 10px;
     max-width: 30%;
-    /* max-height: 500px;*/
+}
+
+.about_me_item img {
+    display: flex;
+    flex-direction: column;
+    max-height: 300px;
+    padding: 10px;
+    border: 10px;
+}
+
+.about_me_item h3 {
+    max-height: 30px;
+}
+
+
+/* Contact me links */
+
+.about_me_item a {
+    float: left;
+    color: #333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    max-width: 70px;
+    max-height: 30px;
+    justify-content: space-evenly;
+}
+
+
+/* Change the color of links on hover */
+
+.about_me_item a:hover {
+    background-color: cornflowerblue;
+    color: white;
+}
+
+
+/* Add a color to the active/current link */
+
+.about_me_item a.active {
+    background-color: blueviolet;
+    color: white;
 }
 
 
@@ -89,6 +144,7 @@ p {
 .Projects {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .project_item {
