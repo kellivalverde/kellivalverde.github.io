@@ -14,9 +14,6 @@
   
   .container {
       align-items: center;
-      /* display: flex;
-      flex-direction: row;
-      flex-wrap: wrap; */
       height: 20rem;
       color: gray;
       margin: 20px;
@@ -91,9 +88,20 @@
   
   .About_Me {
       display: grid;
-      grid-template-columns: 1fr auto;
-      /* padding: 10px; */
+      grid-template-columns: 2, 50%;
       margin: 10px;
+  }
+  
+  .About_Me img {
+      float: left;
+      margin-right: 20px;
+      clear: both;
+  }
+  
+  .About_Me p {
+      margin-left: 0px;
+      overflow: auto;
+      display: block;
   }
   /* Contact me links */
   
@@ -112,20 +120,18 @@
       padding: 10px;
   }
   
-  .about_me_item a:hover {
+  .buttons a:hover {
       font-weight: bold;
       color: cornflowerblue;
   }
   
-  .about_me_item a.active {
+  .buttons a.active {
       font-weight: bold;
       color: blueviolet;
   }
   /* ****  PROJECTS SECTION  **** */
   
   .Projects {
-      padding: 10px;
-      margin: 10px;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
