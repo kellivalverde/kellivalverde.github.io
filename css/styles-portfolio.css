@@ -24,7 +24,7 @@
   header,
   .container {
       margin: 0 auto;
-      max-width: 800px;
+      max-width: 1000px;
   }
   /* ****  NAV BAR  **** */
   
@@ -72,7 +72,10 @@
       padding-top: 3em;
       min-height: 20em;
   }
-  /* ****  ABOUT ME SECTION  **** */
+  
+  section ul {
+      padding-left: 1.5em;
+  }
   
   p {
       margin-top: 0;
@@ -85,11 +88,13 @@
   p {
       max-width: 90%;
   }
+  /* ****  ABOUT ME SECTION  **** */
   
   .About_Me {
       display: grid;
       grid-template-columns: 2, 50%;
-      margin: 10px;
+      grid-template-rows: 2;
+      padding: 10px;
   }
   
   .About_Me img {
@@ -102,6 +107,10 @@
       margin-left: 0px;
       overflow: auto;
       display: block;
+  }
+  
+  .About_Me ul {
+      margin-left: 0px;
   }
   /* Contact me links */
   
@@ -145,10 +154,6 @@
       padding: 10px;
       max-width: 30%;
       /* max-height: 500px;*/
-  }
-  
-  section ul {
-      padding-left: 1.5em;
   }
   
   .project_item a {
