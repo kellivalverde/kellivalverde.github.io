@@ -1,195 +1,299 @@
-  * {
-      font-family: sans-serif;
-      line-height: 1.618em;
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-  }
-  
-  html {
-      font-size: 16px;
-      margin-top: 3em;
-      height: 100%;
-      margin: 0;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-image: linear-gradient(cornflowerblue, white);
-  }
-  /* ****  CONTAINER  **** */
-  
-  .container {
-      align-items: center;
-      height: 20rem;
-      color: #333;
-      margin: 20px;
-      border: 10px;
-      padding: 0;
-  }
-  
-  header,
-  .container {
-      margin: 0 auto;
-      max-width: 1024px;
-  }
-  /* ****  NAV BAR  **** */
-  
-  nav {
-      position: fixed;
-      top: 0px;
-      left: 0px;
-      width: 100%;
-      display: flex;
-      flex-flow: row;
-      justify-content: left;
-      background-color: #333;
-      color: white;
-  }
-  
-  nav a {
-      float: left;
-      color: #f2f2f2;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-      font-size: 17px;
-  }
-  
-  nav a:hover {
-      background-color: cornflowerblue;
-      font-weight: bold;
-      color: white;
-  }
-  /*  ****  HEADER **** */
-  
-  header {
-      font-size: 2em;
-      color: white;
-      padding: 2em 0;
-  }
-  
-  header span {
-      font-size: 1em;
-      line-height: 1em;
-      color: white;
-  }
-  
-  section {
-      margin: 1em;
-      padding-top: 3em;
-      min-height: 20em;
-  }
-  
-  section ul {
-      padding-left: 1.5em;
-  }
-  
-  p {
-      margin-top: 0;
-      text-align: justify;
-      flex-grow: 1;
-      margin: 5px;
-  }
-  
-  article img,
-  p {
-      max-width: 90%;
-  }
-  /* ****  ABOUT ME SECTION  **** */
-  
-  .About_Me {
-      display: grid;
-      grid-template-columns: 2, 50%;
-      grid-template-rows: 2;
-      padding: 10px;
-  }
-  
-  .About_Me img {
-      float: left;
-      margin-right: 30px;
-      clear: both;
-  }
-  
-  .About_Me p {
-      margin-left: 0px;
-      overflow: auto;
-      display: block;
-  }
-  
-  .skills {
-      text-decoration: none;
-      font-size: 17px;
-      display: flex;
-      flex-flow: column;
-      align-content: center;
-      justify-content: space-evenly;
-  }
-  
-  .skills ul {
-      align-self: start;
-  }
-  /* Contact me links */
-  
-  .contact_info a {
-      float: left;
-      color: #333;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-      font-size: 17px;
-      display: flex;
-      flex-direction: row;
-      font-weight: bold;
-      padding: 10px;
-  }
-  
-  .contact_info a:hover {
-      font-weight: bold;
-      color: cornflowerblue;
-  }
-  
-  .contact_info a.active {
-      font-weight: bold;
-      color: blueviolet;
-  }
-  /* ****  PROJECTS SECTION  **** */
-  
-  .Projects {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      background-origin: padding-box;
-      padding: 1em;
-      background-color: rgb(207, 223, 252);
-  }
-  
-  .project_item {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      margin: 2rem auto;
-      padding: 10px;
-      max-width: 30%;
-      /* max-height: 500px;*/
-  }
-  
-  .project_item a {
-      text-decoration: none;
-      color: #333;
-  }
-  
-  .project_item a:hover {
-      font-weight: bold;
-      color: cornflowerblue;
-  }
-  /* ****  FOOTER  **** */
-  
-  footer {
-      margin: 0 auto;
-      margin-top: 2em;
-      margin-bottom: 1em;
-      width: 100%;
-      color: #333;
-      padding: 1em;
-      text-align: center;
-  }
-  /* ***** Note to self: Break this into 2+ style sheets: one for basic layout and 2nd for more specific styling*/
+          * {
+              font-family: sans-serif;
+              line-height: 1.618em;
+              box-sizing: border-box;
+              margin: 0;
+              padding: 0;
+          }
+          
+          html {
+              font-size: 16px;
+              margin-top: 3em;
+              height: 100%;
+              margin: 0;
+              background-repeat: no-repeat;
+              background-attachment: fixed;
+              background-image: linear-gradient(cornflowerblue, white);
+          }
+          /* ****  CONTAINER  **** */
+          
+          .container {
+              align-items: center;
+              height: 20rem;
+              color: #333;
+              margin: 20px;
+              border: 10px;
+              padding: 0;
+          }
+          
+          header,
+          .container {
+              margin: 0 auto;
+              max-width: 1024px;
+          }
+          /* ****  NAV BAR  **** */
+          
+          nav {
+              position: fixed;
+              top: 0px;
+              left: 0px;
+              width: 100%;
+              display: flex;
+              flex-flow: row;
+              justify-content: left;
+              background-color: #333;
+              color: white;
+          }
+          
+          nav a {
+              float: left;
+              color: #f2f2f2;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+              font-size: 17px;
+          }
+          
+          nav a:hover {
+              background-color: cornflowerblue;
+              font-weight: bold;
+              color: white;
+          }
+          /*  ****  HEADER **** */
+          
+          header {
+              font-size: 2em;
+              color: white;
+              padding: 2em 0;
+          }
+          
+          header span {
+              font-size: 1em;
+              line-height: 1em;
+              color: white;
+          }
+          
+          section {
+              margin: 1em;
+              padding-top: 3em;
+              min-height: 20em;
+          }
+          
+          section ul {
+              padding-left: 1.5em;
+          }
+          
+          p {
+              margin-top: 0;
+              text-align: justify;
+              flex-grow: 1;
+              margin: 5px;
+          }
+          
+          article img,
+          p {
+              max-width: 90%;
+          }
+          /* **** IMAGE CARAUSEL **** */
+          
+          .carousel-container {
+              max-width: 1000px;
+              position: relative;
+              margin: auto;
+          }
+          /* Hide the images by default */
+          
+          .mySlides {
+              display: none;
+          }
+          /* Next & previous buttons */
+          
+          .prev,
+          .next {
+              cursor: pointer;
+              position: absolute;
+              top: 50%;
+              width: auto;
+              margin-top: -22px;
+              padding: 16px;
+              color: white;
+              font-weight: bold;
+              font-size: 18px;
+              transition: 0.6s ease;
+              border-radius: 0 3px 3px 0;
+              user-select: none;
+          }
+          /* Position the "next button" to the right */
+          
+          .next {
+              right: 0;
+              border-radius: 3px 0 0 3px;
+          }
+          /* On hover, add a black background color with a little bit see-through */
+          
+          .prev:hover,
+          .next:hover {
+              background-color: rgba(0, 0, 0, 0.8);
+          }
+          /* Caption text */
+          
+          .text {
+              color: #f2f2f2;
+              font-size: 15px;
+              padding: 8px 12px;
+              position: absolute;
+              bottom: 8px;
+              width: 100%;
+              text-align: center;
+          }
+          /* Number text (1/3 etc) */
+          
+          .numbertext {
+              color: #f2f2f2;
+              font-size: 12px;
+              padding: 8px 12px;
+              position: absolute;
+              top: 0;
+          }
+          /* The dots/bullets/indicators */
+          
+          .dot {
+              cursor: pointer;
+              height: 15px;
+              width: 15px;
+              margin: 0 2px;
+              background-color: #bbb;
+              border-radius: 50%;
+              display: inline-block;
+              transition: background-color 0.6s ease;
+          }
+          
+          .active,
+          .dot:hover {
+              background-color: #717171;
+          }
+          /* Fading animation */
+          
+          .fade {
+              -webkit-animation-name: fade;
+              -webkit-animation-duration: 1.5s;
+              animation-name: fade;
+              animation-duration: 1.5s;
+          }
+          
+          @-webkit-keyframes fade {
+              from {
+                  opacity: .4
+              }
+              to {
+                  opacity: 1
+              }
+          }
+          
+          @keyframes fade {
+              from {
+                  opacity: .4
+              }
+              to {
+                  opacity: 1
+              }
+          }
+          /* ****  ABOUT ME SECTION  **** */
+          
+          .About_Me {
+              display: grid;
+              grid-template-columns: 2, 50%;
+              grid-template-rows: 2;
+              padding: 10px;
+          }
+          
+          .About_Me img {
+              float: left;
+              margin-right: 30px;
+              clear: both;
+          }
+          
+          .About_Me p {
+              margin-left: 0px;
+              overflow: auto;
+              display: block;
+          }
+          
+          .skills {
+              text-decoration: none;
+              font-size: 17px;
+              display: flex;
+              flex-flow: column;
+              align-content: center;
+              justify-content: space-evenly;
+          }
+          
+          .skills ul {
+              align-self: start;
+          }
+          /* Contact me links */
+          
+          .contact_info a {
+              float: left;
+              color: #333;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+              font-size: 17px;
+              display: flex;
+              flex-direction: row;
+              font-weight: bold;
+              padding: 10px;
+          }
+          
+          .contact_info a:hover {
+              font-weight: bold;
+              color: cornflowerblue;
+          }
+          
+          .contact_info a.active {
+              font-weight: bold;
+              color: blueviolet;
+          }
+          /* ****  PROJECTS SECTION  **** */
+          
+          .Projects {
+              display: flex;
+              flex-direction: row;
+              flex-wrap: wrap;
+              background-origin: padding-box;
+              padding: 1em;
+              background-color: rgb(207, 223, 252);
+          }
+          
+          .project_item {
+              display: flex;
+              flex-direction: column;
+              flex-wrap: wrap;
+              margin: 2rem auto;
+              padding: 10px;
+              max-width: 30%;
+              /* max-height: 500px;*/
+          }
+          
+          .project_item a {
+              text-decoration: none;
+              color: #333;
+          }
+          
+          .project_item a:hover {
+              font-weight: bold;
+              color: cornflowerblue;
+          }
+          /* ****  FOOTER  **** */
+          
+          footer {
+              margin: 0 auto;
+              margin-top: 2em;
+              margin-bottom: 1em;
+              width: 100%;
+              color: #333;
+              padding: 1em;
+              text-align: center;
+          }
+          /* ***** Note to self: Break this into 2+ style sheets: one for basic layout and 2nd for more specific styling*/
