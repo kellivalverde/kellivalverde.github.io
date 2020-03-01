@@ -1,3 +1,15 @@
+// ******  NAV BAR  ******
+function myNavBarFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+
+
+
 // ******  IMAGE CAROUSEL  ******
 var slideIndex = 1;
 showSlides(slideIndex);
