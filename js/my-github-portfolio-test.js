@@ -1,3 +1,4 @@
+// ******  IMAGE CAROUSEL  ******
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -30,17 +31,21 @@ function showSlides(n) {
     console.log("Dots number: " + slideIndex);
 
 }
+
+// ******   COLLAPSIBLE DECRIPTION BUTTONS  ******
 var coll = document.getElementsByClassName("collapsible");
 var i;
 
 for (i = 0; i < coll.length; i++) {
     coll[i].addEventListener("click", function() {
         this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.display === "block") {
-            content.style.display = "none";
+        var description = this.nextElementSibling;
+        if (description.style.display === "block") {
+            description.style.display = "none";
+            console.log("Changed text to hidden!");
         } else {
-            content.style.display = "block";
+            description.style.display = "block";
+            console.log("Changed text to visible");
         }
     });
 }
