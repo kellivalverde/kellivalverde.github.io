@@ -9,7 +9,6 @@ function myNavBarFunction() {
 }
 
 
-
 // ******  IMAGE CAROUSEL  ******
 var slideIndex = 1;
 showSlides(slideIndex);
