@@ -42,6 +42,22 @@ function showSlides(n) {
     console.log("Dots number: " + slideIndex);
 
 }
+// ******   MODAL BIO BUTTON  ******
+var confirmButton = document.getElementById('confirm');
+confirmButton.onclick = function() {
+    var userResponse = confirm('My Full Tech Stack: Java • Spring • Hibernate • JPA • JavaScript • MVC • HTML • CSS • Flexbox • Grid • TDD • Agile (Scrum), Object Oriented Programming (OOP) • AJAX • JSON • Restful APIs • Responsive Design / Mobile • Relational Databases • Source Control / Git • Trello / Kanban • Adobe XD • Adobe Photoshop • Adobe Illustrator');
+    var displayContainer = document.getElementById('confirmResponse');
+    var displayMessage = '';
+    if (userResponse) {
+        displayMessage += ';)'
+    } else {
+        displayMessage += ''
+    }
+    displayContainer.innerText = displayMessage;
+    // if "true," user clickerd "Ok." If "false, user clicked "Cancel"
+    console.log(userResponse); 
+}
+
 
 // ******   COLLAPSIBLE DECRIPTION BUTTONS  ******
 var coll = document.getElementsByClassName("collapsible");
