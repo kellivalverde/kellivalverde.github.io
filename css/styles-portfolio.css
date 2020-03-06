@@ -256,39 +256,6 @@
      color: cornflowerblue;
  }
 
-/* **** Buttons **** */
-.button .collapsible {
-    text-decoration: none;
-    background-color: #333;
-    color: white;
-    border: none;
-    max-width: 80%;
-    display: block;
-    text-align: center;
-    padding: 14px 16px;
-    font-size: 17px;
-}
-
-
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-
-.active,
-.collapsible:hover {
-    background-color: cornflowerblue;
-}
-
-
-/* Style the collapsible content. Note: hidden by default */
-
-.description {
-    padding: 0;
-    display: none;
-    background-color: whitesmoke;
-    overflow: hidden;
-}
-
-
  /* ****  FOOTER  **** */
 
  footer {
