@@ -1,5 +1,5 @@
  * {
-     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif,Arial,Helvetica,sans-serif;
+     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, Arial, Helvetica, sans-serif;
      line-height: 1.618em;
      box-sizing: border-box;
      margin: 0;
@@ -32,11 +32,11 @@
      margin: 0 auto;
      max-width: 1024px;
      align-items: center;
-    }
+ }
 
  header {
-    align-items: center;
- }   
+     align-items: center;
+ }
 
  .force-top {
      top: 0;
@@ -146,13 +146,14 @@
 
  section {
      margin: 1em;
-     padding-top: 3em;
-     min-height: 20em;
+     padding-top: 1em;
+     min-height: 10em;
  }
 
  section ul {
      padding-left: 1.5em;
  }
+
 
  p {
      margin-top: 0;
@@ -169,10 +170,11 @@
  /* ****  ABOUT ME SECTION  **** */
 
  .About_Me {
-     display: grid;
+     display: flexbox;
      grid-template-columns: 2, 50%;
      grid-template-rows: 2;
      padding: 10px;
+
  }
 
  .About_Me img {
@@ -187,6 +189,7 @@
      display: block;
  }
 
+ /* Skills */
  .skills {
      text-decoration: none;
      font-size: 17px;
@@ -194,11 +197,45 @@
      flex-flow: column;
      align-content: center;
      justify-content: space-evenly;
+   
  }
 
  .skills ul {
-     align-self: start;
+     overflow: auto;
+     list-style-type: none;
+     padding: 10px;
  }
+
+ .skills li {
+     height: 25px;
+     float: left;
+     margin-right: 0px;
+     border-right: 1px solid white;
+     padding: 0 20px;
+ }
+
+ .skills li:last-child {
+     border-right: none;
+ }
+
+ .skills li a {
+     text-decoration: none;
+     color: #ccc;
+     font: 25px/1 Helvetica, Verdana, sans-serif;
+     text-transform: uppercase;
+
+ }
+
+ .skills li a:hover {
+     color: #666;
+ }
+
+ .skills li.active a {
+     font-weight: bold;
+     color: #333;
+ }
+
+
 
  /* Contact me links */
 
@@ -206,13 +243,14 @@
      float: left;
      color: #333;
      text-align: center;
-     padding: 14px 16px;
+
      text-decoration: none;
      font-size: 17px;
      display: flex;
      flex-direction: row;
+     align-items: center;
      font-weight: bold;
-     padding: 10px;
+     padding: 0.5em;
  }
 
  .contact_info a:hover {
