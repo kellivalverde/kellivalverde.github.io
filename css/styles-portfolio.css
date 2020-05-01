@@ -37,7 +37,7 @@
  }
 
  header {
-     align-items: center;
+    text-align: center;
  }
 
  .force-top {
@@ -138,6 +138,7 @@
      font-size: 2em;
      color: #333;
      padding: 2em 0;
+     text-align: center;
      
  }
 
