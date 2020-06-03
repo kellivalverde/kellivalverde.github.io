@@ -40,6 +40,10 @@
     text-align: center;
  }
 
+span {
+    color: palevioletred;
+}
+
  .force-top {
      top: 0;
      position: absolute;
@@ -259,7 +263,7 @@
 
  .contact_info a:hover {
      font-weight: bold;
-     color: palevioletred
+     color: palevioletred;
  }
 
  .contact_info a.active {
