@@ -108,6 +108,10 @@ margin-right: 5%;
 height: 312px;
 }
 
+#about p {
+  padding-top: 2rem ;
+}
+
 address {
   margin-bottom: 1rem;
   font-style: normal;
@@ -3063,6 +3067,8 @@ input[type=button].btn-block {
   }
 }
 @media (min-width: 768px) {
+
+
   .dropdown-menu-md-left {
     right: auto;
     left: 0;
@@ -4125,6 +4131,24 @@ input[type=button].btn-block {
     padding-right: 0;
     padding-left: 0;
   }
+
+  #about-me-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  #about img {
+    float: none;
+    margin: 5px 0 20px 0;
+  }
+  #about p {
+    margin: auto 0;
+    padding: 0;
+  }
+  
+  
 }
 @media (min-width: 768px) {
   .navbar-expand-md {
