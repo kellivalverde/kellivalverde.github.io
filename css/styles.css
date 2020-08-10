@@ -7822,6 +7822,16 @@ button.bg-dark:focus {
   padding-left: 3rem !important;
 }
 
+.pl-10,
+.px-10 {
+  padding-left: 10%!important;
+}
+
+.pr-10,
+.pr-10 {
+  padding-right: 10% !important;
+}
+
 .m-n1 {
   margin: -0.25rem !important;
 }
