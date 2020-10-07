@@ -5555,7 +5555,14 @@ a.close.disabled {
   line-height: 1.5;
 }
 
+/* .modal-body {
+  position: relative;
+  flex: 1 1 auto;
+  padding: 1rem;
+} */
 .modal-body {
+  max-height: calc(100vh - 210px);
+  overflow: auto;
   position: relative;
   flex: 1 1 auto;
   padding: 1rem;
