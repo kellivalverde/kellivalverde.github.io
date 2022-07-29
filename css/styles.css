@@ -6212,7 +6212,8 @@ button.bg-light:focus {
 }
 
 .bg-dark {
-  background-color: #25081D !important;
+  background-image: linear-gradient(var(--gray-dark), black);
+  background-color: var(--gray-dark);
 }
 
 a.bg-dark:hover, a.bg-dark:focus,
@@ -10153,7 +10154,7 @@ hr.light {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(37, 8, 29, 0.8) 0%, rgba(37, 8, 29, 0.8) 100%), url("../img/my-desk.jpg");
+  background: linear-gradient(to bottom, rgba(37, 8, 29, 0.8) 0%, rgba(37, 8, 29, 0.8) 100%), url("../img/20220608_144059.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
