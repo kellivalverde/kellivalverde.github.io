@@ -1,25 +1,11 @@
-/*-----------------------------------------------------------------------------------
 
-    Template Name: Simple
-    Author: UIdeck
-    Author URI: uideck.com
-    Version: 1.0
-
------------------------------------------------------------------------------------
-
-    CSS INDEX
-    ===================
-
-    01. Theme default CSS
-	02. Header
-    03. Hero
-	04. Footer
-
------------------------------------------------------------------------------------*/
-/*===========================
-    01.COMMON css 
-===========================*/
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800");
+
+:root{
+  --primary:#FF52C5;
+  --secondary:#990066;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -128,6 +114,12 @@ p {
   height: 100%;
 }
 
+.bg_cover h2{
+  color:#F9F9F9;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
 /*===== All Button Style =====*/
 .main-btn {
   display: inline-block;
@@ -146,7 +138,7 @@ p {
   cursor: pointer;
   z-index: 5;
   transition: all 0.4s ease-out 0s;
-  background-color: #E84E4E;
+  background-color: var(--secondary);
 }
 
 .main-btn:hover {
@@ -251,7 +243,7 @@ p {
   height: 100%;
   border-style: solid;
   /* Spinner Color */
-  border-color: #E84E4E #E84E4E #F9F9F9;
+  border-color: #000000 #000000 #F9F9F9;
   border-radius: 50%;
   border-width: 6px;
 }
