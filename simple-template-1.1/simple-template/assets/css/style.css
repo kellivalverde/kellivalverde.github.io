@@ -1,9 +1,18 @@
 
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800");
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800");
+
 
 :root{
-  --primary:#FF52C5;
-  --secondary:#990066;
+  --primary: rgb(185, 106, 250);
+  --primary-after: rgb(193, 154, 224);
+  --secondary:#3ad8de;
+  --secondary-after:#37afb3;
+  --light: #fff;
+  --medium1: #8785af;
+  --medium2: #595678;
+  --dark:rgb(24, 24, 27);
+  
 }
 
 html {
@@ -14,7 +23,8 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: normal;
   font-style: normal;
-  color: #5A5872;
+  color: var(--light);
+  background-color: var(--dark);
 }
 
 * {
@@ -64,7 +74,7 @@ h5,
 h6 {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
-  color: #2B2A3D;
+  color: var(--light);
   margin: 0px;
 }
 
@@ -102,7 +112,7 @@ p {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
-  color: #5A5872;
+  color: var(--medium1);
   margin: 0px;
 }
 
@@ -134,16 +144,17 @@ p {
   height: 55px;
   line-height: 55px;
   border-radius: 0;
-  color: #fff;
+  color: var(--dark);
   cursor: pointer;
   z-index: 5;
   transition: all 0.4s ease-out 0s;
-  background-color: var(--secondary);
+  background-color: var(--primary);
+  text-transform: uppercase;
 }
 
 .main-btn:hover {
-  background-color: #ff6b6b;
-  color: #fff;
+  background-color: var(--primary-after);
+  color: var(--dark);
 }
 
 /*===== All Section Title Style =====*/
@@ -161,12 +172,12 @@ p {
 .section_title p {
   margin-top: 15px;
   font-size: 18px;
-  color: #9e9db3;
+  color: var(--medium1);
 }
 
 .section_title.section_title_2 .title,
 .section_title.section_title_2 p {
-  color: #fff;
+  color: var(--dark);
 }
 
 /*===== All Preloader Style =====*/
@@ -498,13 +509,13 @@ p {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .navbar-nav .nav-item a.active, .navbar-nav .nav-item a:hover {
-    color: #E84E4E;
+    color: var(--primary);
   }
 }
 
 @media (max-width: 767px) {
   .navbar-nav .nav-item a.active, .navbar-nav .nav-item a:hover {
-    color: #E84E4E;
+    color: var(--primary);
   }
 }
 
@@ -576,7 +587,7 @@ p {
 
 .navbar-nav .nav-item .sub-menu li a.active, .navbar-nav .nav-item .sub-menu li a:hover {
   padding-left: 25px;
-  color: #E84E4E;
+  color: var(--primary);
 }
 
 .navbar-nav .sub-nav-toggler {
@@ -632,11 +643,11 @@ p {
 }
 
 .sticky .navbar-nav .nav-item a::before {
-  background-color: #E84E4E;
+  background-color: var(--primary);
 }
 
 .sticky .navbar-nav .nav-item a.active, .sticky .navbar-nav .nav-item a:hover {
-  color: #E84E4E;
+  color: var(--primary);
 }
 
 /*===== hero =====*/
@@ -717,7 +728,7 @@ p {
 
 .hero_content .hero_title span {
   display: contents;
-  color: #E84E4E;
+  color: var(--primary);
 }
 
 .hero_content p {
@@ -742,7 +753,7 @@ p {
 .single_features i {
   font-size: 60px;
   line-height: 60px;
-  color: #E84E4E;
+  color: var(--primary);
   transition: all 0.3s ease-out 0s;
 }
 
@@ -754,7 +765,7 @@ p {
 }
 
 .single_features .features_title {
-  color: #E84E4E;
+  color: var(--primary);
   margin-top: 15px;
   font-size: 24px;
   font-weight: 600;
@@ -772,15 +783,17 @@ p {
 }
 
 .single_features:hover i {
-  color: #E84E4E;
+  color: var(--primary);
 }
 
 /*===========================
       04.ABOUT css 
 ===========================*/
 .about_area {
-  background-color: #F9F9F9;
+  /* background-color: #F9F9F9; */
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
   position: relative;
+  color: var(--dark);
 }
 
 .about_image {
@@ -810,7 +823,7 @@ p {
 .about_image .image_content {
   width: 185px;
   height: 185px;
-  background-color: #E84E4E;
+  background-color: var(--primary);
   display: table;
   text-align: center;
   position: relative;
@@ -841,7 +854,7 @@ p {
 
 .about_image .image_content .experience {
   font-size: 24px;
-  color: #fff;
+  color: var(--dark);
   font-weight: 500;
   display: table-cell;
   vertical-align: middle;
@@ -933,7 +946,8 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(232, 78, 78, 0.9);
+  /* background-color: rgba(232, 78, 78, 0.9); */
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
   opacity: 0;
   transition: all 0.3s ease-out 0s;
 }
@@ -968,7 +982,7 @@ p {
 
 .single_portfolio .portfolio_content .meta li a:hover {
   background-color: #fff;
-  color: #E84E4E;
+  color: var(--primary);
 }
 
 .single_portfolio .portfolio_content .meta li:first-child {
@@ -1047,7 +1061,7 @@ p {
 }
 
 .single_pricing .price {
-  color: #E84E4E;
+  color: var(--primary);
   font-size: 44px;
   margin-top: 25px;
   font-weight: 700;
@@ -1071,7 +1085,7 @@ p {
   line-height: 43px;
   text-align: center;
   padding: 0 25px;
-  color: #E84E4E;
+  color: var(--primary);
   transition: all 0.3s ease-out 0s;
   margin-top: 30px;
 }
@@ -1081,7 +1095,7 @@ p {
 }
 
 .single_pricing.active {
-  background-color: #E84E4E;
+  background-color: var(--primary);
 }
 
 .single_pricing.active .pricing_title {
@@ -1130,7 +1144,7 @@ p {
 }
 
 .single_team .team_content .team_name a:hover {
-  color: #E84E4E;
+  color: var(--primary);
 }
 
 .single_team .team_content p {
@@ -1155,7 +1169,7 @@ p {
 }
 
 .single_team .team_content .social li a:hover {
-  color: #E84E4E;
+  color: var(--primary);
 }
 
 /*===========================
@@ -1202,7 +1216,7 @@ p {
 }
 
 .testimonial_active_wrapper .tns-nav button.tns-nav-active {
-  background-color: #E84E4E;
+  background-color: var(--primary);
 }
 
 .single_testimonial img {
@@ -1258,7 +1272,7 @@ p {
 }
 
 .single_blog .blog_content .blog_title a:hover {
-  color: #E84E4E;
+  color: var(--primary);
 }
 
 .single_blog .blog_content p {
@@ -1274,7 +1288,7 @@ p {
 }
 
 .single_blog .blog_content .more:hover {
-  color: #E84E4E;
+  color: var(--primary);
 }
 
 .single_blog.blog_2 .blog_content {
@@ -1368,7 +1382,7 @@ p.form-message.success.form-message.error, p.form-message.error.form-message.err
     11.FOOTER css 
 ===========================*/
 .footer_area {
-  background-color: #E84E4E;
+  background-color: var(--primary);
   padding-top: 15px;
   padding-bottom: 30px;
 }
@@ -1443,7 +1457,7 @@ p.form-message.success.form-message.error, p.form-message.error.form-message.err
   height: 40px;
   line-height: 40px;
   border-radius: 5px;
-  background-color: #E84E4E;
+  background-color: var(--primary);
   text-align: center;
   z-index: 99;
   transition: all 0.3s ease-out 0s;
@@ -1453,5 +1467,5 @@ p.form-message.success.form-message.error, p.form-message.error.form-message.err
 
 .back-to-top:hover {
   color: #fff;
-  background-color: #E84E4E;
+  background-color: var(--primary);
 }
