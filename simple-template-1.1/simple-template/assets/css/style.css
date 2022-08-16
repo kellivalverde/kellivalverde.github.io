@@ -176,7 +176,7 @@ p {
 }
 
 .section_title.section_title_2 .title,
-.section_title.section_title_2 p {
+.section_title.section_title_2 p, .dark {
   color: var(--dark);
 }
 
@@ -890,7 +890,7 @@ p {
 }
 
 .about_content {
-  padding-right: 50px;
+  padding-right: 4rem;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
