@@ -171,33 +171,6 @@ p {
   color: var(--dark);
 }
 
-.secondary-btn {
-  display: inline-block;
-  font-weight: 500;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  user-select: none;
-  border: 0;
-  padding: 0 40px;
-  font-size: 16px;
-  height: 55px;
-  line-height: 55px;
-  border-radius: 50px;
-  color: var(--light);
-  cursor: pointer;
-  z-index: 5;
-  transition: all 0.4s ease-out 0s;
-  background-color: var(--dark);
-  text-transform: uppercase;
-}
-
-.secondary-btn:hover {
-  background-color: var(--medium2);
-  color: var(--primary);
-}
-
-
 
 /*===== All Section Title Style =====*/
 .section_title .title {
@@ -1500,14 +1473,14 @@ p.form-message.success.form-message.error, p.form-message.error.form-message.err
 /*===== BACK TO TOP =====*/
 .back-to-top {
   font-size: 20px;
-  color: #fff;
+  color: var(--dark);
   position: fixed;
   right: 20px;
   bottom: 20px;
   width: 40px;
   height: 40px;
   line-height: 40px;
-  border-radius: 5px;
+  border-radius: 50px;
   background-color: var(--primary);
   text-align: center;
   z-index: 99;
@@ -1516,6 +1489,9 @@ p.form-message.success.form-message.error, p.form-message.error.form-message.err
   display: none;
 }
 
+.back-to-top .lni{
+  font-weight: 700;
+}
 .back-to-top:hover {
   color: #fff;
   background-color: var(--primary);
