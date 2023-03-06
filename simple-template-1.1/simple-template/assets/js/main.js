@@ -24,20 +24,20 @@
 
         if (window.pageYOffset > sticky) {
             header_navbar.classList.add("sticky");
-            logo.setAttribute("src", "assets/images/logo-2.svg")
+            // logo.setAttribute("src", "assets/images/logo-2.svg");
         } else {
             header_navbar.classList.remove("sticky");
-            logo.setAttribute("src", "assets/images/logo.svg")
+            // logo.setAttribute("src", "assets/images/logo.svg");
         }
 
 
 
         // show or hide the back-top-top button
-        var backToTo = document.querySelector(".back-to-top");
+        var backToTop = document.querySelector(".back-to-top");
         if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-            backToTo.style.display = "block";
+            backToTop.style.display = "block";
         } else {
-            backToTo.style.display = "none";
+            backToTop.style.display = "none";
         }
     };
 
@@ -93,33 +93,6 @@
             navbarCollapse.classList.remove('show')
         })
     );
-
-
-    let mybutton = document.getElementById("btn-back-to-top");
-
-    // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function () {
-      scrollFunction();
-    };
-    
-    function scrollFunction() {
-      if (
-        document.body.scrollTop > 20 ||
-        document.documentElement.scrollTop > 20
-      ) {
-        mybutton.style.display = "block";
-      } else {
-        mybutton.style.display = "none";
-      }
-    }
-    // When the user clicks on the button, scroll to the top of the document
-    mybutton.addEventListener("click", backToTop);
-    
-    function backToTop() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
-
 
 
     //===== glide tiny for testimonial
