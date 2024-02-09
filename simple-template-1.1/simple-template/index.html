@@ -1,41 +1,25 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--====== Title ======-->
     <title>Kelli Valverde - Portfolio</title>
 
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!--====== Favicon Icon ======-->
+    <!-- Favicon Icon -->
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/png">
 
-    <!--====== Animate CSS ======-->
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
     <link rel="stylesheet" href="assets/css/animate.css">
-
-    <!--====== Glide CSS ======-->
-    <link rel="stylesheet" href="assets/css/tiny-slider.css">
-
-    <!--====== Line Icons CSS ======-->
-    <link rel="stylesheet" href="assets/css/LineIcons.2.0.css">
-
-    <!--====== Bootstrap CSS ======-->
-    <link rel="stylesheet" href="assets/css/bootstrap-5.0.0-beta1.min.css">
-
-    <!--====== Default CSS ======-->
     <link rel="stylesheet" href="assets/css/default.css">
-
-    <!--====== Style CSS ======-->
     <link rel="stylesheet" href="assets/css/style.css">
-
 
 </head>
 
 <body>
-
 
     <!--====== PRELOADER PART START ======-->
 
@@ -115,7 +99,7 @@
                                 <h2 class="wow fadeInUp " data-wow-duration="1.3s" data-wow-delay="0.5s">UI/UX Designer
                                 </h2>
                                 <a href="#portfolio" class="main-btn wow fadeInUp" data-wow-duration="1.3s"
-                                    data-wow-delay="0.8s">See my protfolio</a>
+                                    data-wow-delay="0.8s">See my portfolio</a>
                             </div> <!-- hero content -->
                         </div>
                     </div> <!-- row -->
@@ -269,7 +253,7 @@
             <div class="about_image bg_cover wow fadeInLeft" data-wow-duration="1.3s" data-wow-delay="0.2s"
                 style="background-image: url(assets/images/KV2022.png)">
                 <div class="image_content">
-                    <h4 class="experience"><span>13</span> Years of Experience</h4>
+                    <h4 class="experience"><span id="yearsSince2010"></span>&nbsp;Years of Experience</h4>
                 </div>
             </div>
         </div>
@@ -337,20 +321,21 @@
             <div class="row">
                 <div class="col col-md-6">
                     <div class="single_features text-center mt-60 wow fadeInUp" data-wow-duration="1.3s"
-                        data-wow-delay="0.2s">
-                        <i class="lni lni-certificate"></i>
-                        <h4 class="features_title">We Can Code IT</h4>
-                        <p>Certificate of Software Development, Spring 2020</p>
+                        data-wow-delay="0.3s">
+                        <i class="lni lni-graduation"></i>
+                        <h4 class="features_title">University of Mount Union</h4>
+                        <p>Bachelor of Fine Arts (BFA), English Minor | Spring 2010 | GPA: 3.75</p>
                     </div>
                 </div>
                 <div class="col col-md-6">
                     <div class="single_features text-center mt-60 wow fadeInUp" data-wow-duration="1.3s"
-                        data-wow-delay="0.3s">
-                        <i class="lni lni-graduation"></i>
-                        <h4 class="features_title">University of Mount Union</h4>
-                        <p>Bachelor of Fine Arts (BFA), English Minor | GPA: 3.75</p>
+                        data-wow-delay="0.2s">
+                        <i class="lni lni-certificate"></i>
+                        <h4 class="features_title">We Can Code IT</h4>
+                        <p>Certificate of Software Development | Spring 2020</p>
                     </div>
                 </div>
+
 
 
 
@@ -368,7 +353,9 @@
     <!--====== CONTACT PART START ======-->
 
     <section id="contact" class="contact_area bg_cover pt-120 pb-130"
-        style="background-image: url(assets/images/contact_bg.jpg)">
+        style="background-image: url(assets/images/lorenzo-herrera-p0j-mE6mGo4-unsplash.jpg)"   >
+
+  
         <div class="container">
 
 
@@ -376,41 +363,33 @@
                 <div class="col-lg-6">
                     <div class="section_title  text-center pb-25">
                         <h4 class="title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">Get in touch</h4>
-                        <!-- <p class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.4s">Connect with me via email
-                            or on LinkedIn.<br>Design portfolio
-                            available through my LinkedIn profile.</p> -->
+                       
                     </div> <!-- section title -->
                 </div>
             </div> <!-- row -->
 
-            
+
 
             <div class="row justify-content-center">
-                <div class="col-lg-3 col-md-7">
-                    <div class="single_features text-center mt-30 wow fadeInUp" data-wow-duration="1.3s"
-                        data-wow-delay="0.2s">
-                        <a href="mailto:kellipaughvalverde@gmail.com"
-                        target="_blank ">
-                        <i class="lni lni-envelope"></i>
-                        <h4 class="features_title">Email</h4></a>
-                       
-                    </div>
-                </div>
+              
                 <div class="col-lg-3 col-md-7">
                     <div class="single_features text-center mt-30 wow fadeInUp" data-wow-duration="1.3s"
                         data-wow-delay="0.4s">
-                        <a href="https://www.linkedin.com/in/kellivalverde/"
-                        target="_blank "><i class="lni lni-linkedin-original"></i>
-                        <h4 class="features_title">LinkedIn</h4></a>
-                        
+                        <a rel="noopener" href="https://www.linkedin.com/in/kellivalverde/" target="_blank "><i
+                                class="lni lni-linkedin-original"></i>
+                            <h4 class="features_title">LinkedIn</h4>
+                        </a>
+
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-7">
                     <div class="single_features text-center mt-30 wow fadeInUp" data-wow-duration="1.3s"
                         data-wow-delay="0.6s">
-                        <a href="https://github.com/kellivalverde " target="_blank "><i class="lni lni-github-original"></i>
-                            <h4 class="features_title">GitHub</h4></a>
-                        
+                        <a rel="noopener" href="https://github.com/kellivalverde " target="_blank "><i
+                                class="lni lni-github-original"></i>
+                            <h4 class="features_title">GitHub</h4>
+                        </a>
+
                     </div>
                 </div>
             </div>
@@ -448,26 +427,25 @@
 
     <!--====== BACK TOP TOP PART START ======-->
 
-    <a href="#" class="back-to-top"><i class="lni lni-chevron-up"></i></a>
+    <a rel="noopener" href="#" class="back-to-top"><i class="lni lni-chevron-up"></i></a>
 
     <!--====== BACK TOP TOP PART ENDS ======-->
 
 
-    <!--====== Bootstrap js ======-->
     <script src="assets/js/bootstrap.bundle-5.0.0-beta1.min.js"></script>
-
-    <!--====== glide js ======-->
-    <script src="assets/js/tiny-slider.js"></script>
-
-    <!--====== wow js ======-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/min/tiny-slider.js"></script>
     <script src="assets/js/wow.min.js"></script>
-
-    <!--====== Main js ======-->
     <script src="assets/js/main.js"></script>
     <script>
-        document.getElementById("year").innerHTML = new Date().getFullYear();
-    </script>
+        // Set the current year
+        var currentYear = new Date().getFullYear();
+        document.getElementById("year").innerHTML = currentYear;
 
+        // Calculate and set the number of years since 2010
+        var yearsSince2010 = currentYear - 2010;
+        document.getElementById("yearsSince2010").innerHTML = yearsSince2010;
+    </script>
 </body>
+
 
 </html>
